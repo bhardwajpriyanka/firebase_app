@@ -27,6 +27,10 @@ Future<void> main() async {
             page: () => const SignInScreen(),
           ),
           GetPage(
+            name: '/splesh',
+            page: () => const HomeScreen(),
+          ),
+          GetPage(
             name: '/bottom',
             page: () => const Bottomscreen(),
           ),
