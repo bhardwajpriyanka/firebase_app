@@ -89,7 +89,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             "search items",
                             style: TextStyle(
                               color: Colors.grey,
-                              fontSize: 15.sp,
+                              fontSize: 15,
                             ),
                           ),
                         ),
@@ -98,7 +98,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ),
               ),
-              SizedBox(height: 20.sp),
+              SizedBox(height: 20),
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Row(
@@ -149,8 +149,8 @@ class _HomeScreenState extends State<HomeScreen> {
                                   arguments: controller.productList[index]);
                             },
                             child: Container(
-                              height: 150,
-                              width: 250,
+                              height: 140,
+                              width: 240,
                               margin: const EdgeInsets.all(5),
                               decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(15),
@@ -158,7 +158,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     BoxShadow(
                                         color: Colors.black,
                                         blurStyle: BlurStyle.outer,
-                                        blurRadius: 0.5)
+                                        blurRadius: 0.6)
                                   ]),
                               child: Column(
                                 children: [
