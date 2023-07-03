@@ -29,7 +29,7 @@ class _HomeScreenState extends State<HomeScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              SizedBox(height: 20.sp),
+              SizedBox(height: 20),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -58,21 +58,14 @@ class _HomeScreenState extends State<HomeScreen> {
                 ],
               ),
               SizedBox(
-                height: 20.sp,
+                height: 20,
               ),
-              Text("Explore", style: TextStyle(fontSize: 25.sp)),
-              SizedBox(height: 15.sp),
-              Text(
-                "Best outfits for you",
-                style: TextStyle(color: Colors.grey, fontSize: 15.sp),
-              ),
-              SizedBox(height: 20.sp),
               Center(
                 child: Container(
-                  height: 45.sp,
-                  width: 300.sp,
+                  height: 45,
+                  width: 300,
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10.sp),
+                    borderRadius: BorderRadius.circular(10),
                     color: Colors.grey.shade100,
                   ),
                   child: Padding(
@@ -81,16 +74,16 @@ class _HomeScreenState extends State<HomeScreen> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Container(
-                          height: 50.sp,
-                          width: 50.sp,
+                          height: 50,
+                          width: 50,
                           alignment: Alignment.center,
                           child: Icon(
                             Icons.search,
                           ),
                         ),
                         Container(
-                          height: 50.sp,
-                          width: 100.sp,
+                          height: 50,
+                          width: 100,
                           alignment: Alignment.centerLeft,
                           child: Text(
                             "search items",
@@ -100,15 +93,6 @@ class _HomeScreenState extends State<HomeScreen> {
                             ),
                           ),
                         ),
-                        Container(
-                            height: 55.sp,
-                            width: 35.sp,
-                            decoration: BoxDecoration(
-                                color: Colors.blue,
-                                borderRadius: BorderRadius.circular(10)),
-                            alignment: Alignment.centerLeft,
-                            child: Center(
-                                child: Icon(Icons.manage_search_outlined))),
                       ],
                     ),
                   ),
@@ -120,7 +104,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text("New Arraival",
+                    Text(" ALL Product",
                         style: TextStyle(
                             fontSize: 18, fontWeight: FontWeight.w500)),
                     Text("See All"),
@@ -151,7 +135,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         controller.productList.add(m1);
 
                         print(
-                            "============${data['name']} ${data['price']} ${data['category']} ${data['image']}");
+                            "${data['name']} ${data['price']} ${data['category']} ${data['image']}");
                       }
                       return GridView.builder(
                         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
@@ -212,7 +196,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       );
                     }
                     return const CircularProgressIndicator(
-                      color: Color(0xffE38800),
+                      color: Colors.blue
                     );
                   },
                 ),
